@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Product = require('./models/product');
 
 mongoose.set('strictQuery', true);
-mongoose.connect('mongodb+srv://rezzan:1223456@cluster0.apsjcns.mongodb.net/products_test?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.apsjcns.mongodb.net/products_test?retryWrites=true&w=majority')
 .then(() => {
     console.log('Connected to datbse')
 }).catch(()=>{
