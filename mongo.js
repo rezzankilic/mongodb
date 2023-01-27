@@ -2,7 +2,7 @@ const { ClientSession } = require('mongodb');
 
 const MongoClient = require('mongodb').MongoClient;
 
-const url = 'mongodb+srv://rezzan:1223456@cluster0.apsjcns.mongodb.net/products_test?retryWrites=true&w=majority';
+const url = 'mongodb+srv://<username>:<password>@cluster0.apsjcns.mongodb.net/products_test?retryWrites=true&w=majority';
 
 const createProduct = async (req, res, next) => {
   const newProduct = {
